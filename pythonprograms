@@ -1,0 +1,233 @@
+#OPERATORS
+# Arithmetic operators
+x=2
+y=3
+print(x+y)
+print(x-y)
+print(x*y)
+print(x/y)
+print(x%y)
+print(x**y)
+print(x//y)
+#Assignment operators
+x=2
+print(x += 2)
+print(x -= 2)
+print(x *= 2)
+print(x /= 2)
+a,b=4,6
+print(a)
+print(b)
+#unary operator(-1)
+n=7
+print(n)
+print(-n)
+n=-n
+print(n)
+#Relationship operators
+a=5
+b=6
+print(a<b)
+print(a>b)
+print(a<=b)
+print(a>=b)
+print(a==b)
+print(a!=b)
+#logical Operators
+a=5
+b=4
+print(a<8 and b<5)
+print(a<7 or a>10)
+x=True
+print(not x)
+#Membership Operators
+'a' in 'apple'
+print("True")
+'b' not in 'apple'
+print("False") 
+#Identity Operators
+a=5
+b=5
+print(a is not b)
+print(a is b)
+
+
+#SWAPPING OF TWO NUMBERS IN DIFFERNT WAYS
+#WAY-1
+a=5
+b=6
+c=b
+b=a
+a=c
+print(a)
+print(b)
+ 
+#WAY-2
+a=5
+b=6
+a=a+b
+b=a-b
+a=a-b
+print(a)
+print(b)
+
+#WAY-3
+a=5
+b=6
+a=a^b
+b=a^b
+a=a^b
+print(a)
+print(b)
+
+#WAY-4
+a=5
+b=6
+a=a*b
+b=a/b
+a=a/b
+print(a)
+print(b)
+
+#WAY-5
+a=5
+b=6
+a,b=b,a
+print(a)
+print(b)
+
+
+#CONDITIONAL STATEMENTS
+#"if statement":
+x=int(input())
+if x>=18:
+    print("Eligible for vote")
+
+#"if-else statement":
+x=int(input())
+if x>=18:
+    print("Eligible for vote")
+else:
+    print("Not eligible for vote")
+
+#"elif statement":
+marks=int(input())
+if marks>90:
+    print("A")
+elif marks>70 and marks<90:
+    print("B")
+elif marks>40 and marks<70:
+    print("C")
+else:
+    print("Fail")
+
+#"nested if statement":    
+x=int(input())
+if x<=50:
+    if x%2==0:
+        print("Even")
+    else:
+        print("Odd")
+else:
+    pass
+
+
+
+#CONTROL STATEMENTS:
+#"While loop":
+i=1
+while(i<=5):
+    print("Hello")
+    i=i+1
+
+#"nested-while loop":
+i=1
+while(i<=5):
+    print("Lochana",end=" ")
+    j=1
+    while(j<=4):
+        print("Hi",end=" ")
+        j=j+1
+    i=i+1
+    print()       
+
+#"for loop":
+x='SATYA'
+for i in x:
+    print(i)
+
+for i in range(1,6):
+    print(i)
+
+for i in range(1,11,2):
+    print(i)
+
+x=["lochana",19,"datascience"]
+for i in x:
+    print(i)
+
+for i in range(1,21):
+    if(i%5==0):
+        print(i)
+
+
+
+#CONTROL FLOW STATEMENTS:
+#"break":
+av=10
+x=int(input("How many candies you want:"))
+i=1
+while i<=x:
+    if x>av:
+        print("out of stock")
+        break
+    print("CANDY")
+    i=i+1
+
+#"continue":    
+"print 1 to 20 numbers but not the numbers which are divisible by 3 0r 5"
+for i in range(1,21):
+    if(i%3==0 or i%5==0):
+        continue
+    print(i)
+
+#"pass":
+"print even numbers using pass keyword"    
+for i in range(1,11):
+    if(i%2!=0):
+        pass
+    else:
+        print(i)
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
