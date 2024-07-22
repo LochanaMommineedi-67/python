@@ -384,16 +384,41 @@ print(m3)
 
 
 
+#FUNCTIONS:
+def greet():
+    print("Hello")
+    print("Good Morning")
+greet()    
 
+#creating function for adding 2 numbers:
+def sum(a,b):
+    c=a+b
+    print(c)
+sum(5,7)
 
-#PRIME NUMBER OR NOT:
-num=int(input())
-for i in range(2,num):
-    if i%2==0:
-        print("Given number is a prime")
-    else:
-        print("Given number is not a prime")
-    break       
+#return a value
+def sum(a,b):
+    c=a+b
+    return c
+result=sum(5,9)
+print(result)
+
+#returning 2 values
+def add_sub(a,b):
+    c=a+b
+    d=a-b
+    return c,d
+res1,res2=add_sub(3,7)
+print(res1,res2)
+
+#adding numbers more than 2
+def sum(a,*b):
+    c=a
+    for i in b:
+        c=c+i
+    print(c)
+sum(5,6,34,78)    
+
 
 
 
