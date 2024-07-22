@@ -1,0 +1,72 @@
+#PRIME NUMBER OR NOT:
+num=int(input())
+for i in range(2,num):
+    if i%2==0:
+        print("Given number is a prime")
+    else:
+        print("Given number is not a prime")
+    break       
+
+
+#Passing list to a function:
+"that function will return the number of even and odd numbers"
+def count(lst):
+    even=0
+    odd=0
+    for i in lst:
+        if i%2==0:
+            even=even+1
+        else:
+            odd=odd+1
+    return even,odd
+lst=[22,34,67,54,55,89,63,21,1]
+
+
+even,odd=count(lst)
+print("Even:{} and Odd:{}".format(even,odd))
+
+
+#FIBONACCI SERIES:
+"to print the first 10 fibonacci numbers"
+def fib(n):
+    a=0
+    b=1
+    for i in range(2,n):
+        c=a+b
+        a=b
+        b=c
+        print(c)
+
+
+#Factorial of a number:
+def fact(n):
+    f=1
+    for i in range(1,n+1):
+        f=f*i
+    return f
+x=int(input())
+result=fact(x)
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fib(10)        
