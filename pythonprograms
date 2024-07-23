@@ -49,6 +49,63 @@ result=fact(x)
 print(result)
 
 
+#Factorial using Recursion:
+def fact(n):
+    if n==0:
+        return 1
+    else:
+        return n*fact(n-1)
+result=fact(5)
+print(result)
+
+
+#Lambda Function:
+f=lambda a,b:a+b
+result=f(4,5)
+print(result)
+
+
+#Lambda function using in filter():
+"print even numbers from list"
+nums=[3,2,6,8,4,6,2,9]
+evens=list(filter(lambda n:n%2==0,nums))
+print(evens)
+
+#lambda function using in map():
+"print evens numbers from list and double all the values in list and print it"
+nums=[3,2,6,8,4,6,2,9]
+evens=list(filter(lambda n:n%2==0,nums))
+print(evens)
+doubles=list(map(lambda n:n*2,evens))
+print(doubles)
+
+
+#lambda function using in reduce():
+"print even numbers from list,double all the even numbers and add all the doubled numbers"
+from functools import reduce
+nums=[3,2,6,8,4,6,2,9]
+evens=list(filter(lambda n:n%2==0, nums))
+print(evens)
+doubles=list(map(lambda n:n*2,evens))
+print(doubles)
+sum=reduce(lambda a,b:a+b,doubles)
+print(sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
