@@ -1,0 +1,121 @@
+
+#"OOPS IN PYTHON"
+"basic example using classes and object"
+class computer:
+    def config(self):
+        print("i5,16gb,1tb")
+com1=computer()
+com2=computer()
+computer.config(com1)
+computer.config(com2)
+
+
+"example using variables and methods"
+class computer:
+    def __int__(self,cpu,ram):
+        self.cpu=cpu
+        self.ram=ram
+    def config(self):
+        print("config is",self.cpu,self.ram)
+com1=computer('i5',16)
+com2=computer("ryzen 3", 8)
+com1.config()
+com2.config()
+
+
+#types of variables:
+''' ->Instance variable
+    ->static(class) variable'''
+class car:
+    wheels=4                                              #class variable
+    def __int__(self,company,milage):
+        self.company="BMW"                                  #instance variable
+        self.milage=10                                       #instance variable
+c1=car()
+c2=car()
+c1.milage=8                                                 #class variable
+print(c1.company,c1.milage,c1.wheels)
+print(c2.company,c2.milage,c2.wheels)
+
+
+#Types of methods:
+''' ->Instance method
+    ->class method
+    ->static method   '''
+"Instance method"
+class student:
+    school="sunshine"
+    def __int__(self,m1,m2,m3):
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+    def avg(self):
+        return(self.m1+self.m2+self.m3)/3
+s1=student(34,45,46)
+s2=student(39,45,46)
+print(s1.avg())
+print(s2.avg())
+
+"class method"
+class student:
+    school="sunshine"
+    def __int__(self,m1,m2,m3):
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+    @class method
+    def getschool(cls):
+        return cls.school
+print(student.info())
+
+"static method"
+class student:
+    school="sunshine"
+    def __int__(self,m1,m2,m3):
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+    @static method
+    def info():
+        print("This is student class")
+student.info()        
+
+
+#INNER CLASS:
+class student:
+    def __int__(self,name,rollno):
+        self.name=name
+        self.rollno=rollno
+        self.lap=self.laptop()
+    def show(self):
+        print(self.name,self.rollno)
+        self.lap.show()
+    class laptop:
+        def __int__(self):
+            self.brand="HP"
+            self.cpu="i5"
+            self.ram=8
+        def show(self):
+            print(self.brand,self.cpu,self.ram)
+s1=student("Nain",202)
+s2=student("Jenny",203)
+s1.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
